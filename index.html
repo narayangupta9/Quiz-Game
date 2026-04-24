@@ -1,17 +1,99 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GK Quiz Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevQuiz — JS · DSA · Analytics</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body><div class="container">
-    <h1>5th Class GK Quiz</h1>
-    <div id="quiz-box">
-        <h2 id="question">Question here</h2>
-        <div id="options"></div>
-        <button id="nextBtn">Next</button>
+<body>
+
+  <div class="shell">
+
+    <!-- ── Header ── -->
+    <div class="header">
+      <div class="logo">Dev<span>Quiz</span></div>
+      <div class="pill-bar">
+        <span class="pill pill-js">JS</span>
+        <span class="pill pill-dsa">DSA</span>
+        <span class="pill pill-da">Analytics</span>
+      </div>
     </div>
-    <h2 id="scoreBox" class="hide"></h2>
-</div><script src="questions.js"></script><script src="script.js"></script></body>
+
+    <!-- ── Progress bar ── -->
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span id="prog-label">Question 1 of 15</span>
+        <span id="prog-pct">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <!-- ── Quiz card ── -->
+    <div class="card" id="quiz-card">
+
+      <!-- Window chrome -->
+      <div class="card-top">
+        <div class="dots">
+          <div class="dot dot-r"></div>
+          <div class="dot dot-y"></div>
+          <div class="dot dot-g"></div>
+        </div>
+        <span class="tab-file" id="tab-file">quiz.js</span>
+        <span class="q-counter" id="q-counter">01 / 15</span>
+      </div>
+
+      <!-- Question body -->
+      <div class="q-body" id="q-body">
+        <div class="q-tag"  id="q-tag"></div>
+        <div class="q-text" id="q-text"></div>
+        <div class="q-code" id="q-code" style="display:none"></div>
+        <div class="options" id="options"></div>
+        <div class="explanation" id="explanation"></div>
+      </div>
+
+      <!-- Result screen (hidden until quiz ends) -->
+      <div class="result-screen" id="result-screen">
+        <div class="result-ascii">✦ ─────────────────────── ✦</div>
+        <div class="result-title" id="result-title">🎉 Nice work!</div>
+        <div class="result-sub"   id="result-sub">Quiz complete — here's your breakdown</div>
+        <div class="score-grid">
+          <div class="score-cell">
+            <div class="val v-green" id="res-score">0</div>
+            <div class="lbl">CORRECT</div>
+          </div>
+          <div class="score-cell">
+            <div class="val v-cyan" id="res-pct">0%</div>
+            <div class="lbl">ACCURACY</div>
+          </div>
+          <div class="score-cell">
+            <div class="val v-amber" id="res-grade">—</div>
+            <div class="lbl">GRADE</div>
+          </div>
+        </div>
+        <div class="verdict" id="verdict"></div>
+        <button class="restart-btn" id="restart-btn">↺ &nbsp;Restart Quiz</button>
+      </div>
+
+      <!-- Card footer -->
+      <div class="card-foot" id="card-foot">
+        <div class="score-live">score: <span id="live-score">0</span> / <span id="live-total">15</span></div>
+        <button class="next-btn" id="next-btn">
+          next
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /.card -->
+
+  </div><!-- /.shell -->
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
