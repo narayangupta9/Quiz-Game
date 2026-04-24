@@ -222,3 +222,4 @@ restartBtn.addEventListener('click', () => {
 
 /* ── Kick off ── */
 renderQuestion();
+ 
