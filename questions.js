@@ -11,7 +11,7 @@
  *   explanation: HTML string shown after answering
  */
 
-const questions = [
+const questions = [ 
 
   /* ================================================================
      JavaScript  (5 questions)
