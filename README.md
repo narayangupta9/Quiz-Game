@@ -1,111 +1,69 @@
-# 🧠 DevQuiz – JavaScript, DSA & Data Analytics Quiz
+# DevQuiz – JavaScript, DSA & Data Analytics Quiz
 
-An interactive and modern **technical quiz application** built using **HTML, CSS, and JavaScript**.
-This quiz tests knowledge across:
+An interactive technical quiz application built using HTML, CSS, and JavaScript.
+This app tests knowledge across JavaScript, Data Structures & Algorithms, and Data Analytics.
 
-* JavaScript ⚡
-* Data Structures & Algorithms 📊
-* Data Analytics 📈
+## 🌐 Live Demo
 
----
+https://quiz-game-o95d6r9f9-narayangupta8081-7241s-projects.vercel.app/
 
 ## 🚀 Features
 
-* 🧩 Multiple categories (JS, DSA, Analytics)
-* 💻 Code-based questions with syntax highlighting
-* ✅ Instant answer selection
-* 📖 Detailed explanations after each question
-* 🎯 Score tracking
-* 🎨 Clean and responsive UI
-
----
+* Multiple categories (JavaScript, DSA, Analytics)
+* Code-based questions
+* Answer selection with score tracking
+* Detailed explanations
+* Clean and simple UI
 
 ## 📁 Project Structure
 
-```
 quiz-game/
-│
-├── index.html
-├── style.css
-├── script.js
-└── questions.js
-```
-
----
+index.html
+style.css
+script.js
+questions.js
 
 ## 🛠️ Technologies Used
 
 * HTML5
 * CSS3
-* JavaScript (Vanilla JS)
+* JavaScript
 
----
+## 📚 Categories
 
-## 📚 Question Categories
-
-### ⚡ JavaScript
+JavaScript:
 
 * Closures
 * Event Loop
 * Array Methods
-* Core Concepts
 
-### 📊 DSA (Data Structures & Algorithms)
+DSA:
 
 * Time Complexity
 * Searching Algorithms
 * Trees & Graphs
-* Hashing
 
-### 📈 Data Analytics
+Data Analytics:
 
 * SQL (HAVING, GROUP BY)
-* Statistics (Normal Distribution)
-* Pandas Operations
-* Correlation & Visualization
+* Statistics
+* Pandas
+* Correlation
 
----
-
-## ▶️ How to Run
+## ▶️ How to Run Locally
 
 1. Download or clone the repository
 2. Open the project folder
-3. Run `index.html` in your browser
-4. Start answering questions 🎯
-
----
-
-## 🎮 How It Works
-
-1. A question is displayed (with code if applicable)
-2. Select the correct option
-3. Move to the next question
-4. View explanation and final score
-
----
-
-## 📌 Example Topics Covered
-
-* `typeof null` bug in JavaScript
-* Event loop execution order
-* QuickSort worst-case complexity
-* Binary Search efficiency
-* SQL HAVING vs WHERE
-* Pearson correlation
-
----
+3. Double-click index.html
+4. Start the quiz
 
 ## 💡 Future Improvements
 
-* ⏱️ Add timer per question
-* 🔀 Random question shuffle
-* 🏆 Leaderboard system
-* 🌙 Dark mode
-* 📱 Fully mobile responsive design
-* 🔐 User login & score saving
-
----
+* Timer
+* Leaderboard
+* Dark Mode
+* Mobile responsive design
 
 ## 🙌 Author
 
-**Narayan Gupta**
+Narayan Gupta
