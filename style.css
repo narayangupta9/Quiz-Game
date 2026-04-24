@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; background: #f0f8ff; display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+.container { background: white; padding: 20px; border-radius: 10px; width: 400px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+
+h1 { color: #333; }
+
+#options button { display: block; width: 100%; margin: 10px 0; padding: 10px; border: none; background: #007BFF; color: white; border-radius: 5px; cursor: pointer; }
+
+#options button:hover { background: #0056b3; }
+
+.correct { background: green !important; }
+
+.wrong { background: red !important; }
+
+#nextBtn { margin-top: 10px; padding: 10px; border: none; background: orange; color: white; border-radius: 5px; cursor: pointer; }
+
+.hide { display: none; }
